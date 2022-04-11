@@ -1,0 +1,10 @@
+table:
+  name: cities
+  schema: public
+object_relationships:
+- name: county
+  using:
+    foreign_key_constraint_on: county_fips
+- name: state
+  using:
+    foreign_key_constraint_on: state_id
